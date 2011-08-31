@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="net.hawkes.admintools.wcf.functions" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/package.xsd">
+    <packageinformation>
+        <packagename>AdminTools 2 WCF LGPL Functions</packagename>
+        <packagename language="de">AdminTools 2 WCF LGPL Funktionen</packagename>
+        <packagename language="de-informal">AdminTools 2 WCF LGPL Funktionen</packagename>
+        <packagedescription>This is a core set of functions for the WCF. This package requires the LGPL licensed packages of WoltLab only. Included functions: Clear Caches, Copy user group rights, Optimize database, Delete inactive users, Override Language Settings</packagedescription>        
+        <packagedescription language="de"><![CDATA[Dieses Paket liefert einige Grundfunktionen für die Admin Tools. Es ist nur von den LGPL Pakete von WoltLab abhängig. Enthaltene Funktionen: Cacheleerung, Benutzergruppenrechte kopieren, Inaktive Benutzer löschen, Spracheinstellungen überschreiben.]]></packagedescription>
+        <packagedescription language="de-informal"><![CDATA[Dieses Paket liefert einige Grundfunktionen für die Admin Tools. Es ist nur von den LGPL Pakete von WoltLab abhängig. Enthaltene Funktionen: Cacheleerung, Benutzergruppenrechte kopieren, Inaktive Benutzer löschen, Spracheinstellungen überschreiben.]]></packagedescription>
+        <version>1.0.3</version>
+        <date>2011-06-18</date>
+        <standalone>0</standalone>
+        <isUnique>1</isUnique> 
+        <plugin>com.woltlab.wcf.data.cronjobs</plugin>
+        <packageurl>http://www.wbb3addons.de</packageurl>
+    </packageinformation>
+
+    <authorinformation>
+        <author>Oliver Kliebisch</author>
+        <authorurl>http://www.oliver-kliebisch.de</authorurl>
+    </authorinformation>
+
+    <requiredpackages>
+        <requiredpackage minversion="1.1.0">com.woltlab.wcf</requiredpackage>
+        <requiredpackage>net.hawkes.admintools</requiredpackage>
+        <requiredpackage minversion="1.0.0" file="requirements/net.hawkes.optiontype.groupsingleselect.tar.gz">net.hawkes.optiontype.groupsingleselect</requiredpackage>
+        <requiredpackage minversion="1.0.0" file="requirements/net.hawkes.optiontype.languageselect.tar.gz">net.hawkes.optiontype.languageselect</requiredpackage>        
+    </requiredpackages>
+    
+    <optionalpackages>
+    	<optionalpackage file="optionals/net.hawkes.admintools.lazydelete.tar.gz">net.hawkes.admintools.lazydelete</optionalpackage>
+    	<optionalpackage file="optionals/net.hawkes.admintools.groupboardpermissions.tar.gz">net.hawkes.admintools.groupboardpermissions</optionalpackage>
+    </optionalpackages>
+
+    <instructions type="install">
+        <files>files.tar</files>                
+        <admintoolsfunction>admintools.xml</admintoolsfunction>        
+        <languages languagecode="de">de.xml</languages>               
+        <languages languagecode="de-informal">de-informal.xml</languages>
+        <languages languagecode="en">en.xml</languages>        
+    </instructions>
+    
+    <instructions type="update" fromversion="1.0.2">
+        <empty></empty>
+    </instructions>
+
+</package>

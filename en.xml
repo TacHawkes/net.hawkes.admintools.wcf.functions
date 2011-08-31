@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="en">
+<category name="wcf.acp.admintools">		
+		<item name="wcf.acp.admintools.function.cache.clearCache"><![CDATA[Clear caches]]></item>
+		<item name="wcf.acp.admintools.function.database.optimize"><![CDATA[Optimize database]]></item>
+		<item name="wcf.acp.admintools.function.database.optimize.optimize.success"><![CDATA[<li>{$tableCount} tables were optimzed successful.</li>]]></item>
+		<item name="wcf.acp.admintools.function.database.optimize.analyze.success"><![CDATA[<li>{$tableCount} tables were analyzed successful.</li>]]></item>
+		<item name="wcf.acp.admintools.function.user.usergroupcopy"><![CDATA[Copy Usergroups]]></item>
+		<item name="wcf.acp.admintools.function.user.usergroupcopy.sourceEqualsTarget"><![CDATA[The source and the destination group can not be the same.]]></item>
+		<item name="wcf.acp.admintools.function.user.languagedefaults"><![CDATA[Default language]]></item>
+		<item name="wcf.acp.admintools.function.user.languagedefaults.affectedUsers"><![CDATA[<p>{$affectedUsers} have been updated.</p>]]></item>
+		<item name="wcf.acp.admintools.function.user.inactiveUsers"><![CDATA[Inactive Users]]></item>
+		<item name="wcf.acp.admintools.function.user.inactiveUsers.success"><![CDATA[<p>{$countDeleted} users have been deleted.</p>
+																					<p>{$countWarned} have been warned for their inactivity and the possible consequences.</p>]]></item>
+		<item name="wcf.acp.admintools.function.user.inactiveUsers.none"><![CDATA[Do nothing]]></item>
+		<item name="wcf.acp.admintools.function.user.inactiveUsers.warn"><![CDATA[Information only]]></item>
+		<item name="wcf.acp.admintools.function.user.inactiveUsers.delete"><![CDATA[Delete only]]></item>
+		<item name="wcf.acp.admintools.function.user.inactiveUsers.warnanddelete"><![CDATA[Inform & delete]]></item>		
+		<item name="wcf.acp.admintools.function.user.inactiveUsers.inactive.mailsubject"><![CDATA[{$pagetitle}: Your account will be deleted soon]]></item>
+		<item name="wcf.acp.admintools.function.user.inactiveUsers.inactive.mailmessage"><![CDATA[Hello {$username},
+
+you have visited our forum ({$pagetitle})  ca. {$lastvisit} days ago.
+We are deleteing inactive users due to provide a well-usable and performant plattform to our active users.
+If you don't want to stay on our community any longer, you can ignore this message and your account will be deleted in {$warntime} days.
+
+
+------------------------------------------------------------
+This eMail has been sent by the System automatically.]]></item>
+		<item name="wcf.acp.admintools.function.user.inactiveUsers.mailsubject"><![CDATA[{PAGE_TITLE}: Userboard {$actionDate}]]></item>
+		<item name="wcf.acp.admintools.function.user.inactiveUsers.message"><![CDATA[Hello {PAGE_TITLE} Admin,
+
+this is your overview about the users registered until {$actionDate}.]]></item>
+		<item name="wcf.acp.admintools.function.user.inactiveUsers.newUsers"><![CDATA[{$count} New users ({$registrationDate}):]]></item>
+		<item name="wcf.acp.admintools.function.user.inactiveUsers.inactive.mailwarned"><![CDATA[{$count} Warnings (inactivity:]]></item>
+		<item name="wcf.acp.admintools.function.user.inactiveUsers.inactive.adminmail"><![CDATA[{$count} Deleted Users (inactivity):]]></item>
+	</category>
+	<category name="wcf.acp.admintools.option">
+		<item name="wcf.acp.admintools.option.category.cache"><![CDATA[Cache]]></item>
+		<item name="wcf.acp.admintools.option.category.database"><![CDATA[Database]]></item>
+		<item name="wcf.acp.admintools.option.category.cache.clearCache"><![CDATA[Clear caches]]></item>
+		<item name="wcf.acp.admintools.option.category.cache.clearCache.description"><![CDATA[This function can clear caches to force an update.]]></item>				
+		<item name="wcf.acp.admintools.option.category.user"><![CDATA[User]]></item>
+		<item name="wcf.acp.admintools.option.category.user.languagedefaults"><![CDATA[Default languages]]></item>
+		<item name="wcf.acp.admintools.option.category.user.languagedefaults.description"><![CDATA[This function can overwrite or correct the language settings ot the Users. This may be helpful if languages have been deleted or added.]]></item>
+		<item name="wcf.acp.admintools.option.category.user.usergroupcopy"><![CDATA[Copy usergroups]]></item>
+		<item name="wcf.acp.admintools.option.category.user.usergroupcopy.description"><![CDATA[This function can copy grouprights from a group to an other group.]]></item>
+		<item name="wcf.acp.admintools.option.category.user.inactiveUsers"><![CDATA[Inactive users]]></item>
+		<item name="wcf.acp.admintools.option.category.user.inactiveUsers.description"><![CDATA[This function can delete inactive users and/or inform them about their inactivity. Note, this option can be executed by a cronjob.]]></item>
+		<item name="wcf.acp.admintools.option.category.user.inactiveUsers.general"><![CDATA[general settings]]></item>		
+		<item name="wcf.acp.admintools.option.category.user.inactiveUsers.general.description"><![CDATA[]]></item>
+		<item name="wcf.acp.admintools.option.category.user.inactiveUsers.inactive"><![CDATA[Settings for inactive users]]></item>
+		<item name="wcf.acp.admintools.option.category.user.inactiveUsers.inactive.description"><![CDATA[]]></item>
+		<item name="wcf.acp.admintools.option.cache.clearCache.clearLanguageCache"><![CDATA[Clear language cache]]></item>
+		<item name="wcf.acp.admintools.option.cache.clearCache.clearLanguageCache.description"><![CDATA[If this function is activated, the cached language files will be deleted by initiating it.]]></item>
+		<item name="wcf.acp.admintools.option.cache.clearCache.clearStandaloneCache"><![CDATA[Clear cache of the standalone application]]></item>
+		<item name="wcf.acp.admintools.option.cache.clearCache.clearStandaloneCache.description"><![CDATA[If activated, the cache folder of the standalone application will be emptied.]]></item>
+		<item name="wcf.acp.admintools.option.cache.clearCache.clearStandaloneOptions"><![CDATA[Delete ptions cache of the standalone application]]></item>
+		<item name="wcf.acp.admintools.option.cache.clearCache.clearStandaloneOptions.description"><![CDATA[If activated, the options cache and the options file of the standalone application will be deleted.]]></item>
+		<item name="wcf.acp.admintools.option.cache.clearCache.clearTemplateCache"><![CDATA[Clear template cache]]></item>
+		<item name="wcf.acp.admintools.option.cache.clearCache.clearTemplateCache.description"><![CDATA[If activated, the compiled templates will be deleted.]]></item>
+		<item name="wcf.acp.admintools.option.cache.clearCache.clearWCFCache"><![CDATA[Clear cache of the WoltLab Community Framework]]></item>
+		<item name="wcf.acp.admintools.option.cache.clearCache.clearWCFCache.description"><![CDATA[If activated,the cache-folder of the WoltLab Community Frameworks will be emptied.]]></item>
+		<item name="wcf.acp.admintools.option.category.database.optimize"><![CDATA[Optimize database]]></item>
+		<item name="wcf.acp.admintools.option.category.database.optimize.description"><![CDATA[This function is for optimizing the database. It can be controlled by a cronjob.]]></item>
+		<item name="wcf.acp.admintools.option.database.optimize.analyze"><![CDATA[Analyze database]]></item>
+		<item name="wcf.acp.admintools.option.database.optimize.analyze.description"><![CDATA[Read the <a href="http://dev.mysql.com/doc/refman/5.1/de/analyze-table.html">MySQL Referenzhandbuch</a> (or any matching reference manual written in your language).]]></item>
+		<item name="wcf.acp.admintools.option.database.optimize.optimize"><![CDATA[Datenbank optimieren]]></item>
+		<item name="wcf.acp.admintools.option.database.optimize.optimize.description"><![CDATA[Read the <a href="http://dev.mysql.com/doc/refman/5.1/de/optimize-table.html">MySQL reference manual</a> (or any matching reference manual written in your language).]]></item>		
+		<item name="wcf.acp.admintools.option.user.languagedefaults.languageID"><![CDATA[Language]]></item>
+		<item name="wcf.acp.admintools.option.user.languagedefaults.languageID.description"><![CDATA[Select the language, which has to be set "default" for all usersl.]]></item>
+		<item name="wcf.acp.admintools.option.user.languagedefaults.correctonly"><![CDATA[Corretion only]]></item>
+		<item name="wcf.acp.admintools.option.user.languagedefaults.correctonly.description"><![CDATA[Choose this option, if you only want to corret invalid settings (<strong>recommended!</strong>). ]]></item>
+		<item name="wcf.acp.admintools.option.user.usergroupcopy.sourceGroup"><![CDATA[Source-group]]></item>
+		<item name="wcf.acp.admintools.option.user.usergroupcopy.sourceGroup.description"><![CDATA[Choose the source group.]]></item>
+		<item name="wcf.acp.admintools.option.user.usergroupcopy.targetGroup"><![CDATA[Destination group]]></item>
+		<item name="wcf.acp.admintools.option.user.usergroupcopy.targetGroup.description"><![CDATA[Choose the destination group.]]></item>
+		<item name="wcf.acp.admintools.option.user.usergroupcopy.copyUsers"><![CDATA[Copy users]]></item>
+		<item name="wcf.acp.admintools.option.user.usergroupcopy.copyUsers.description"><![CDATA[Activate this option to copy all users from the source to the destination group.]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.general.periodOfGrace"><![CDATA[Period of grace]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.general.periodOfGrace.description"><![CDATA[New users will not be deleted for this period (days)..]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.general.ignoredUserIDs"><![CDATA[Users not to be deleted:]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.general.ignoredUserIDs.description"><![CDATA[IDs of the users not to be deleted (separated by commas).]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.general.ignoredUsergroupIDs"><![CDATA[Ignored groups]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.general.ignoredUsergroupIDs.description"><![CDATA[Group-IDs to ignore (separated by commas).]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.general.sendWarnMail"><![CDATA[Send a warning via E-Mail]]></item>		
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.general.sendWarnMail.description"><![CDATA[Do you want to warn users before delete them? The text of the warning can be found in this language variable: &raquo;wcf.acp.admintools.function.user.inactiveUsers.inactive.mailmessage&laquo;.]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.general.warnTime"><![CDATA[E-Mail-Deadline]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.general.warnTime.description"><![CDATA[How much days the user has to be warned before the system deletes him automatically?]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.general.sendProtocol"><![CDATA[Activate E-Mail protocol]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.general.sendProtocol.description"><![CDATA[Send a protocol of the warned  and the deleted users to the admin.]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.general.appendNewUsers"><![CDATA[Record new users to protocol]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.general.appendNewUsers.description"><![CDATA[Shows a protocol entry of the new users which registered their accounds yesterday.]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.inactive.time"><![CDATA[Inactive by]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.inactive.time.description"><![CDATA[Time to elapse (in days) to classify an user as inactive.]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.inactive.notActivated"><![CDATA[Delete deactivated users only]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.inactive.notActivated.description"><![CDATA[If activated, only accounts will be deleted which had never been set to active state by the user.]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.inactive.action"><![CDATA[Action]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.inactive.action.description"><![CDATA[Choose what to do with the inactive users.]]></item>
+	</category>
+</language>
